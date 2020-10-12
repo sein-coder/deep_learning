@@ -7,12 +7,12 @@ ubuntu 환경에서 opencv 4.4.0, cuda 10.2, cudnn 8.03 설치하여 gpu 활용�
 설치 명령어 \
 $ sudo apt install nvidia-driver-440 \
 
-확인 명령어
-$ nvidia-smi
+확인 명령어 \
+$ nvidia-smi \
 
-# CUDA 10.2 설치
-$ wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run 
-$ sudo sh cuda_10.2.89_440.33.01_linux.run
+# CUDA 10.2 설치 \
+$ wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run \
+$ sudo sh cuda_10.2.89_440.33.01_linux.run \
 
 이미 설치되어 있는 경우 삭제 방법
 CUDA 삭제

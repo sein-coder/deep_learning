@@ -4,7 +4,7 @@ yolo를 이용한 객체인식
 ubuntu 환경에서 opencv 4.4.0, cuda 10.2, cudnn 8.03 설치하여 gpu 활용하기
 
 # NVIDIA 드라이버 설치
-설치 명령어
+설치 명령어\n
 $ sudo apt install nvidia-driver-440
 
 확인 명령어

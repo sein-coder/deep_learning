@@ -1,7 +1,7 @@
-# object_recognition
-yolo를 이용한 객체인식
+# deep_learning 환경 구축
 
 ubuntu 환경에서 opencv 4.4.0, cuda 10.2, cudnn 8.03 설치하여 gpu 활용하기
+ubuntu 환경에서 tesseract 최신 버전 활용하기
 
 # NVIDIA 드라이버 설치
 설치 명령어  
@@ -78,4 +78,29 @@ OPENCV 4.4.0 설치, 및 심볼릭 링크
 $ sudo make install  
 $ sudo ldconfig  
 
+# Teeseract v4.1.1 설치하기  
 
+최신 버전 설치를 위해서 PPA를 통해서 설치해야한다.
+
+PPA에 저장소 추가
+$ sudo add-apt-repository ppa:alex-p/tesseract-ocr  
+ -> sudo add-apt-repository ppa:user/ppa-name  
+ 정식 릴리즈가 아닌 알파버전 설치(v5.0)
+ sudo add-apt-repository ppa:alex-p/tesseract-ocr-devel
+
+추가한 저장소에서 tesseract-ocr 설치
+$ sudo apt-get update  
+$ sudo apt-get install tesseract-ocr
+
+$ tesseract -v
+
+
+$ vi ~/.bashrc
+
+최 하단에 환경변수 추가
+export TESSDATA_PREFIX="/usr/share/tesseract-ocr/4.00/tessdata/"
+
+$ source ~/.bashrc
+
+언어팩은 아래 링크에서 다운로드 후 /usr/share/tesseract-ocr/4.00/tessdata/ 안에 넣어주면 된다.
+https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files.md

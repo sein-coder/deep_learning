@@ -14,6 +14,9 @@ $ nvidia-smi
 $ wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run  
 $ sudo sh cuda_10.2.89_440.33.01_linux.run  
 
+![cuda](https://user-images.githubusercontent.com/54671310/96948805-6c4cab00-1521-11eb-9791-1c2c88a2cd1e.JPG)  
+설치시 드라이버를 제외하고 CUDA TOOL KIT만 설치한다.
+
 이미 설치되어 있는 경우 삭제 방법  
 CUDA 삭제  
 $ sudo apt-get --purge remove 'cuda*'  
@@ -74,6 +77,10 @@ path는 opencv-contrib-4.4.0의 위치로 지정
 
 OPENCV 4.4.0 컴파일  
 $ make -j4  
+
+![opencv_compile](https://user-images.githubusercontent.com/54671310/96948809-6ce54180-1521-11eb-967e-cd82abbba37d.JPG)
+완료 후 CUDA, CUDNN이 YES와 버전명이 올바르게 나와야하며, PYTHON3 설정이 잡혀 있어야 정상적인 설치상태이다
+
 OPENCV 4.4.0 설치, 및 심볼릭 링크  
 $ sudo make install  
 $ sudo ldconfig  
